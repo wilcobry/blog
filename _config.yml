@@ -12,8 +12,8 @@ header_image: /github_image.jpg ## change your header image if you want
 
 ## Add your social media user names.  Github is required, the rest are optional
 social:
-    github: @wilcobry
-    facebook: @wilcobry
+    github: wilcobry
+    facebook: wilcobry
     email: wilcobry@gmail.com
     linkedin: Brylee Wilcox
 
