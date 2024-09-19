@@ -1,25 +1,21 @@
 ## You should change each of the following fields
 ## to customize your blog
 
-title: Stat 386 Blog
-description: "This description of the blog will appear on the 'About' page." 
-author: Your name
-author_description: "This description of who you are will appear on the 'About' page." 
+title: Brylee's Big-Brain Blog
+description: "Not the average data science blog. The place to find detailed answers made simple to all your data science questions." 
+author: Brylee Wilcox
+author_description: "Statistical science student at BYU with a passion for learning and sharing experiences with others." 
 
-url: https://esnt.github.io ## change this to https://yourusername.github.io
-baseurl: /another-stat386-theme ## change this to the name of your blog repository
-header_image: /assets/img/headerimg.jpg ## change your header image if you want
+url: https://wilcobry.github.io ## change this to https://yourusername.github.io
+baseurl: /blog ## change this to the name of your blog repository
+header_image: /github_image.jpg ## change your header image if you want
 
 ## Add your social media user names.  Github is required, the rest are optional
 social:
-    github:  ## required
-    twitter: 
-    facebook: 
-    email: 
-    linkedin: 
-    youtube: 
-    tumblr: 
-    website: 
+    github: @wilcobry
+    facebook: @wilcobry
+    email: wilcobry@gmail.com
+    linkedin: Brylee Wilcox
 
 
 
