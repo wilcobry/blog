@@ -7,7 +7,7 @@ image: "/assets/img/regression1.jpg"
 display_image: false  # change this to true to display the image below the banner 
 ---
 
-<p class="intro"><span class="dropcap">A</span>s a dedicated R and Rstudio user, this post is an experiment in leaving the comfort of one's default language to understand how a linear regression analysis can be performed in Python. Being proficient in multiple statistical languages is a key skill for one's career making the intitial struggle always worth it.</p>
+<p class="intro"><span class="dropcap">A</span>s a dedicated R and Rstudio user, this post is an experiment in leaving the comfort of one's default language to understand how a linear regression analysis can be performed in Python. Being proficient in multiple statistical languages is a key skill for one's career, making the intitial struggle always worth it.</p>
 
 ### Why Learn Linear Regression? 
 Linear regression is one of the most widely used techniques for predicting and modeling relationships between variables. Linear regression is not only restricted to the field of statistics but is widely used in finance, economics, and across the sciences due to the ease of interpreting results. Additionally, regression is not a difficult skill to master once you learn the important assumptions that are required! 
@@ -25,19 +25,29 @@ Python, on the other hand, is the perfect multi-purpose tool. If R is the master
 
 
 ### Python Packages for Linear Regression
-1. Numpy
+1.
 `Numpy` is a package that is a very powerful scientific and mathematical tool. One of the main purposes of this library is to work with arrays. We can use arrays and the `np.linalg.inv()` function to calculate our beta coefficients of the regression. 
 
-2. Scikit-learn 
+2. 
 `Scikit-learn` is a widely used package great for machine learning. Because of this, this package is great for data analysis, specifically linear regression. The package provides straight forward functions that make regression simple and seamless. In `scikit-learn` we will first use numpy to create arrawy of our data and then use the `LinearRegression()` function to create a linear regression model. 
 
-3. statsmodels 
+3.
 As the name suggests, `statsmodels` is a package devoted to statistical analysis. This package most closely follows the syntax and style of and R-code regression. Because of the similarity to R, this package offers various tools to check assumptions before running our linear regression model.
 
 
-#### Heading 4
+### Running a Regression
+Without diving deep into the theory behind linear regression (we will save that for another post), we will focus on a simple linear regression model with only one independent varialbe. Now... let's actually code up our regression model in Python!
 
-##### Heading 5
+1. Import Necessary Libraries
+{%- highlight python -%}
+import pandas as pd
+import statsmodels.api as sm
+{%- endhighlight -%}
+
+`Pandas` will be used to pull in our data frame and `statmodels` is the package we will use to run our simple linear regression.
+
+2. 
+
 
 ###### Heading 6
 
