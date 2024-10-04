@@ -19,11 +19,11 @@ I think it is a rare occurance to come accross a data scientist who does not hav
 
 #### R
 R is a language created for statistical analysis. Because of this, the language has an unmatched depth of libraries and functionalities to help you achieve the perfect statistical analysis. 
-![Figure]({{site.url}}/{{site.baseurl}}/assets/img/r.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/r.png" alt="" style="width:300px;"/>
 
 #### Python
 Python, on the other hand, is the perfect multi-purpose tool. If R is the master, Python is the jack-of-all-trades. While statistical analysis may not be Python's default funcionality, the breadth of the program allows for seamless connections between multiple coding projects. 
-![Figure]({{site.url}}/{{site.baseurl}}/assets/img/python.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/python.png" alt="" style="width:300px;"/>
 
 ### Python Packages for Linear Regression
 1.
@@ -71,6 +71,7 @@ print(results.summary())
 {%- endhighlight -%}
 One of the most important parts of linear regression is being able to interpret the results of your model. As seen in just a few short steps, actually running a linear regression model is not all that difficult! The difficulty lies in being able to take the results of the analysis and actually draw data-driven conclusions. Two of the most important indicators to determine how years of experience is associated with salary will be our R-squared coefficient and our p-value. 
     * R-squared measures the proportion of variance in the dependent variable that can be explained by the independed variable. In this case, 95.7% of the variation in salary can be explained by years of experience.
+
     * Our p-value tells us probability of observing the data that we did or data more extreme, given that there is no association between our dependent and our independent variable. In this case, there is a probability of close to 0 that years of experience is not associated with salary, given the data we observed. 
     
 
