@@ -43,72 +43,37 @@ Without diving deep into the theory behind linear regression (we will save that 
 import pandas as pd
 import statsmodels.api as sm
 {%- endhighlight -%}
-
 `Pandas` will be used to pull in our data frame and `statmodels` is the package we will use to run our simple linear regression.
 
-2. 
-
-
-###### Heading 6
-
-<blockquote>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</blockquote>
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-
-## Unordered List
-* List Item
-* Longer List Item
-  * Nested List Item
-  * Nested Item
-* List Item
-
-## Ordered List
-1. List Item
-2. Longer List Item
-    1. Nested OL Item
-    2. Another Nested Item
-3. List Item
-
-## Definition List
-<dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
-</dl>
-
-Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
-## Table
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-## Code Snippet
-
+2. Read in Dataset
 {%- highlight python -%}
-def print_hi(name):
-  print("Hi" + name)
-print_hi('Tom')
-#=> prints 'Hi, Tom'.
+df = pd.read_csv('Data/Salary_dataset.csv')
+df = df.drop(df.columns[0], axis=1)
+print(df.head())
 {%- endhighlight -%}
+For our analysis, we will use a dataset from kaggle that provides the salary and years of experience for 29 different people. We are looking to analyze the relationship between these two variables in our analysis-- specifically, how years of experience effects one's salary. 
 
+3. Identify our Independent and Dependent Variable
+{%- highlight python -%}
+experience = df['YearsExperience']
+salary = df['Salary']
 
-## Figure with Caption
-
-<figure>
-	<img src="{{site.url}}/{{site.baseurl}}/assets/img/touring.jpg" alt=""> 
-	<figcaption>Figure 1. - This is an example figcaption</figcaption>
-</figure>
-
-
-{%- highlight html -%}
-<figure>
-	{% raw %}<img src="{{site.url}}/{{site.baseurl}}/assets/img/touring.jpg" alt="">{% endraw %}
-	<figcaption>Figure 1. - This is an example figcaption</figcaption>
-</figure>
+experience = sm.add_constant(experience)
 {%- endhighlight -%}
+In this analysis, experience is our independent variable and salary is the dependent variable. 
+
+4. Run Regression Model
+{%- highlight python -%}
+model = sm.OLS(salary, experience)
+results = model.fit()
+{%- endhighlight -%}
+The function `sm.OLS()` is using an ordinary least squares statistical model to run the regression model. OLS is a standard regression tool when dealing with simple linear regression.
+
+5. Interpret the results
+{%- highlight python -%}
+print(results.summary())
+{%- endhighlight -%}
+One of the most important parts of linear regression is being able to interpret the results of your model. As seen in just a few short steps, actually running a linear regression model is not all that difficult! The difficulty lies in being able to see the results of the analysis and actually draw data-driven conclusions. 
+
+
+
