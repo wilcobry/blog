@@ -3,7 +3,7 @@ layout: post
 title:  "Regression: The Python Way"
 date:   2024-10-03
 description: Expanding the limits of linear regression from the confines R code to explore the possibilites of regresssion and statistical analysis in Python. 
-image: "/assets/img/regression1.jpg"
+image: "/assets/img/Newphoto.jpg"
 display_image: false  # change this to true to display the image below the banner 
 ---
 
