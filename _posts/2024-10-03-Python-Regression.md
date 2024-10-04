@@ -27,10 +27,8 @@ Python, on the other hand, is the perfect multi-purpose tool. If R is the master
 ### Python Packages for Linear Regression
 1.
 `Numpy` is a package that is a very powerful scientific and mathematical tool. One of the main purposes of this library is to work with arrays. We can use arrays and the `np.linalg.inv()` function to calculate our beta coefficients of the regression. 
-
 2. 
 `Scikit-learn` is a widely used package great for machine learning. Because of this, this package is great for data analysis, specifically linear regression. The package provides straight forward functions that make regression simple and seamless. In `scikit-learn` we will first use numpy to create arrawy of our data and then use the `LinearRegression()` function to create a linear regression model. 
-
 3.
 As the name suggests, `statsmodels` is a package devoted to statistical analysis. This package most closely follows the syntax and style of and R-code regression. Because of the similarity to R, this package offers various tools to check assumptions before running our linear regression model.
 
@@ -44,7 +42,6 @@ import pandas as pd
 import statsmodels.api as sm
 {%- endhighlight -%}
 `Pandas` will be used to pull in our data frame and `statmodels` is the package we will use to run our simple linear regression.
-
 2. Read in Dataset
 {%- highlight python -%}
 df = pd.read_csv('Data/Salary_dataset.csv')
@@ -52,23 +49,19 @@ df = df.drop(df.columns[0], axis=1)
 print(df.head())
 {%- endhighlight -%}
 For our analysis, we will use a dataset from kaggle that provides the salary and years of experience for 29 different people. We are looking to analyze the relationship between these two variables in our analysis-- specifically, how years of experience effects one's salary. 
-
 3. Identify our Independent and Dependent Variable
 {%- highlight python -%}
 experience = df['YearsExperience']
 salary = df['Salary']
-
 experience = sm.add_constant(experience)
 {%- endhighlight -%}
 In this analysis, experience is our independent variable and salary is the dependent variable. 
-
 4. Run Regression Model
 {%- highlight python -%}
 model = sm.OLS(salary, experience)
 results = model.fit()
 {%- endhighlight -%}
 The function `sm.OLS()` is using an ordinary least squares statistical model to run the regression model. OLS is a standard regression tool when dealing with simple linear regression.
-
 5. Interpret the results
 {%- highlight python -%}
 print(results.summary())
