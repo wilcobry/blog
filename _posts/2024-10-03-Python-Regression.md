@@ -19,20 +19,20 @@ I think it is a rare occurance to come accross a data scientist who does not hav
 
 #### R
 R is a language created for statistical analysis. Because of this, the language has an unmatched depth of libraries and functionalities to help you achieve the perfect statistical analysis. 
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/r.png" alt="" style="width:50px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/r.png" alt="" style="width:100px;"/>
 
 #### Python
 Python, on the other hand, is the perfect multi-purpose tool. If R is the master, Python is the jack-of-all-trades. While statistical analysis may not be Python's default funcionality, the breadth of the program allows for seamless connections between multiple coding projects. 
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/python.png" alt="" style="width:50px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/python.png" alt="" style="width:100px;"/>
 
 ### Python Packages for Linear Regression
-1.
+1. 
 `Numpy` is a package that is a very powerful scientific and mathematical tool. One of the main purposes of this library is to work with arrays. We can use arrays and the `np.linalg.inv()` function to calculate our beta coefficients of the regression. 
 
 2. 
 `Scikit-learn` is a widely used package great for machine learning. Because of this, this package is great for data analysis, specifically linear regression. The package provides straight forward functions that make regression simple and seamless. In `scikit-learn` we will first use numpy to create arrawy of our data and then use the `LinearRegression()` function to create a linear regression model. 
 
-3.
+3. 
 As the name suggests, `statsmodels` is a package devoted to statistical analysis. This package most closely follows the syntax and style of and R-code regression. Because of the similarity to R, this package offers various tools to check assumptions before running our linear regression model.
 
 
@@ -66,9 +66,7 @@ results = model.fit()
 {%- endhighlight -%}
 The function `sm.OLS()` is using an ordinary least squares statistical model to run the regression model. OLS is a standard regression tool when dealing with simple linear regression.
 #### 5. Interpret the results
-{%- highlight python -%}
-print(results.summary())
-{%- endhighlight -%}
+{% include regression_table.html %}
 One of the most important parts of linear regression is being able to interpret the results of your model. As seen in just a few short steps, actually running a linear regression model is not all that difficult! The difficulty lies in being able to take the results of the analysis and actually draw data-driven conclusions. Two of the most important indicators to determine how years of experience is associated with salary will be our R-squared coefficient and our p-value. 
     
 R-squared measures the proportion of variance in the dependent variable that can be explained by the independed variable. In this case, 95.7% of the variation in salary can be explained by years of experience.
