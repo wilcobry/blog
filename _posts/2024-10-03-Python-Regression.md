@@ -77,7 +77,9 @@ One of the most important parts of linear regression is being able to interpret 
 Our **p-value** tells us probability of observing the data that we did or data more extreme, given that there is no association between our dependent and our independent variable. In this case, there is a probability of close to 0 that years of experience is not associated with salary, given the data we observed. 
 
 ### So what now?
-In just a few short minutes we have gone through the process of learning simple linear regression in Python! This code will be easily applicable to any simple linear regression analysis you have, but as mentioned earlier, we did not dive into the ins and outs of checking assumptions and the process behind multi linear regression. As you learn regression theory and set up the correct analysis, this code will still be a very useful tool. Happy coding!
+In just a few short minutes we have gone through the process of learning simple linear regression in Python! This code will be easily applicable to any simple linear regression analysis you have, but as mentioned earlier, we did not dive into the ins and outs of checking assumptions and the process behind multi linear regression. As you learn regression theory and set up the correct analysis, this code will still be a very useful tool. 
+
+Drop a comment below and let me know what you think of the code and if you have any questions that came up. Happy coding!
 
 
     
