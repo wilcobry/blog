@@ -12,8 +12,12 @@ display_image: false  # change this to true to display the image below the banne
 ### Why Learn Linear Regression? 
 Linear regression is one of the most widely used techniques for predicting and modeling relationships between variables. Linear regression is not only restricted to the field of statistics but is widely used in finance, economics, and across the sciences due to the ease of interpreting results. Additionally, regression is not a difficult skill to master once you learn the important assumptions that are required! 
 
-![Figure]({{site.url}}/{{site.baseurl}}/assets/img/niceregressionphoto.jpg)
-* [Source](https://www.linkedin.com/learning/sas-essential-training-2-regression-analysis-for-healthcare-research/basic-proc-logistic-output?u=2153100)
+<figure>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/img/niceregressionphoto.jpg" alt="Figure" />
+  <figcaption>
+    <a href="https://www.linkedin.com/learning/sas-essential-training-2-regression-analysis-for-healthcare-research/basic-proc-logistic-output?u=2153100">Source</a>
+  </figcaption>
+</figure>
 
 ### R vs. Python
 I think it is a rare occurance to come accross a data scientist who does not have a strong opinion regarding their favorite statistical language. So the question is, is R or Python better? The good news, that is up to you! But it is always good to be informed before you draw conclusions, so let's highlight a few key differences between the two languages to help you decide which path you would like to take when performing your own linear regression analysis. 
@@ -21,14 +25,22 @@ I think it is a rare occurance to come accross a data scientist who does not hav
 #### R
 R is a language created for statistical analysis. Because of this, the language has an unmatched depth of libraries and functionalities to help you achieve the perfect statistical analysis. 
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/r.png" alt="" style="width:100px;"/>
-* [Source](https://en.wikipedia.org/wiki/R_%28programming_language%29)
+<figure>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/img/r.png" alt="" style="width:100px;"/>
+  <figcaption>
+    <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">Source</a>
+  </figcaption>
+</figure>
 
 #### Python
 Python, on the other hand, is the perfect multi-purpose tool. If R is the master, Python is the jack-of-all-trades. While statistical analysis may not be Python's default funcionality, the breadth of the program allows for seamless connections between multiple coding projects. 
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/python.png" alt="" style="width:100px;"/>
-* [Source](https://en.wikipedia.org/wiki/Python_%28programming_language%29)
+<figure>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/img/python.png" alt="Python logo" style="width:100px;" />
+  <figcaption>
+    <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Source</a>
+  </figcaption>
+</figure>
 
 ### Python Packages for Linear Regression
 1. 
