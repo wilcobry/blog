@@ -85,7 +85,7 @@ results = model.fit()
 {%- endhighlight -%}
 The function `sm.OLS()` is using an ordinary least squares statistical model to run the regression model. OLS is a standard regression tool when dealing with simple linear regression.
 #### 5. Interpret the results
-{% include regression_output.html %}
+{% include regression_string1.html %}
 
 One of the most important parts of linear regression is being able to interpret the results of your model. As seen in just a few short steps, actually running a linear regression model is not all that difficult! The difficulty lies in being able to take the results of the analysis and actually draw data-driven conclusions. Two of the most important indicators to determine how years of experience is associated with salary will be our R-squared coefficient and our p-value. 
     
