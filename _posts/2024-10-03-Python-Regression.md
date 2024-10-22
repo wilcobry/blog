@@ -76,7 +76,8 @@ experience = df['YearsExperience']
 salary = df['Salary']
 experience = sm.add_constant(experience)
 {%- endhighlight -%}
-In this analysis, experience is our independent variable and salary is the dependent variable. A scatterplot shows us an initial relationship between our independent variable, years of experience, and our dependent variable, salary. 
+In this analysis, experience is our independent variable and salary is the dependent variable. A scatterplot shows us an initial relationship between our independent variable, years of experience, and our dependent variable, salary.
+ 
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/scatterplot.png"/>
 #### 4. Run Regression Model
 {%- highlight python -%}
