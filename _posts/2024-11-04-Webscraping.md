@@ -3,11 +3,11 @@ layout: post
 title:  "House Hunters: Webscraping Edition"
 date:   2024-11-03
 description: Buying a house is no easy task! With hundreds of houses available, it becomes difficult to sift through all the many options. But with just a few lines of code we can turn overwhelming pages of data into a clean, curated data set of housing information!
-image: "/assets/img/househeader.jpg"
+image: "/assets/img/image5.jpg"
 display_image: false  # change this to true to display the image below the banner 
 ---
 
-<p class="intro"><span class="dropcap">W</span>hen I get bored, online shopping is a common hobby -- and house shopping has become a recent favorite. My husband and I want to buy a house once we graduate so we like to look at the options that are available in the region. The problem: about 95% of the houses we scroll through are way out of our budget or not what we are looking for. As an aspiring data scientist, the obvious solution to any problem is code! This post will dive into scraping and cleaning housing data to better understand the housing market in the region.
+<p class="intro"><span class="dropcap">W</span>hen I get bored, online shopping is a common hobby -- and house shopping has become a recent favorite. My husband and I want to buy a house once we graduate so we like to look at the options that are available in the region. The problem: about 95% of the houses we scroll through are way out of our budget or not what we are looking for. As an aspiring data scientist, the obvious solution to any problem is code! This post will dive into scraping and cleaning housing data to better understand the housing market in the region.</p>
 
 ## Goals of the Webscraper
 As a first-time prospective home buyer, one of the biggest questions we have is knowing if the house is really worth what it says it is. Luckily, with the webscraper we are going to build, we will be able to create a data frame that filters to houses in our price range and calculate the average square footage and common features of the houses in this range.
@@ -18,7 +18,7 @@ Extracting data from websites can be done in multiple ways, such as APIs and Pyt
 ### Steps to Collect Data
 1. **Identify best method to extract your data**. In the case of Redfin, I first looked at the options to use an API but the APIs available did not have the data I was looking for. Because of this, I decided to use the `Selenium` package in Python to scrape the Redfin website using a web driver.
 
-2. **Identify the container with the housing data**. As seen below, Redfin's website has a section of the website that contains a list of all the houses, this section is called a *container*. When webscraping in `Selenium`, you first need to identify the container where all of your data is located. Within this larger container, Redfin also uses containers to group each listing together
+2. **Identify the container with the housing data**. As seen below, Redfin's website has a section of the website that contains a list of all the houses, this section is called a *container*. When webscraping in `Selenium`, you first need to identify the container where all of your data is located. Within this larger container, Redfin also uses containers to group each listing together. Identifying these containers sets us up to easily locate all the data we want to scrape from Redfin.
 
 <figure>
   <img src="{{site.url}}/{{site.baseurl}}/assets/img/house_screenshot.jpg" alt="Figure" />
@@ -26,3 +26,5 @@ Extracting data from websites can be done in multiple ways, such as APIs and Pyt
     <a href="https://www.redfin.com/county/2918/UT/Utah-County">Source</a>
   </figcaption>
 </figure>
+
+3. **
