@@ -52,3 +52,9 @@ while current_page <= int(last_page):
     except:
         pass
 {%- endhighlight -%}
+
+Once our data has been scraped and read into a dataframe, it is important to clean your data. In the dataframe I created from Redfin, I removed NA values in the `Price` column and used regular expressions to extract float values from `Price`, `Sq_Footage`, `Beds`, and `Baths`, and extract the city and zipcode from the `address` column. 
+
+
+### Analyzing the Data
+Once
