@@ -3,7 +3,7 @@ layout: post
 title:  "House Hunters: Webscraping Edition"
 date:   2024-11-03
 description: Buying a house is no easy task! With hundreds of houses available, it becomes difficult to sift through all the many options. But with just a few lines of code we can turn overwhelming pages of data into a clean, curated data set of housing information!
-image: "/assets/img/image5.jpg"
+image: "/assets/img/househeader.png"
 display_image: false  # change this to true to display the image below the banner 
 ---
 
