@@ -29,4 +29,4 @@ Extracting data from websites can be done in multiple ways, such as APIs and Pyt
 
 3. **Identify the elements that will be extracted**. Within each container, there are elements associated with the information that we want to extract about each home. In fact, for this dataset all the elements we need to extract fall under the *bp-Homecard__Stats* class. Navigate to this class in your inspector and you will easily find the elements you are looking for! In my analysis, I wanted price, beds and baths, square footage, and the address.
 
-4. 
+4. **Use a for loop to extract elements from every container and page.** Once we have identified the elements we want to extract, if we don't use a for loop, our code will only scrape the first element it finds. Instead, we need code that will extract elements from each container. Additionally, Redfin's data is stored on multiple pages, so we need to add code that will allow our web driver to access each page and scrape the data. Below is the code for the for loop that was used to scrape all of our data. This data can be appended to lists and then made into a dataframe. 
