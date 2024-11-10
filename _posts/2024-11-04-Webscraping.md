@@ -21,7 +21,7 @@ Extracting data from websites can be done in multiple ways, such as APIs and Pyt
 2. **Identify the container with the housing data**. As seen below, Redfin's website has a section of the website that contains a list of all the houses, this section is called a *container*. When webscraping in `Selenium`, you first need to identify the container where all of your data is located. Within this larger container, Redfin also uses containers to group each listing together. Identifying these containers sets us up to easily locate all the data we want to scrape from Redfin.
 
 <figure>
-  <img src="{{site.url}}/{{site.baseurl}}/assets/img/house_screenshot.jpg" alt="Figure" style="width:400px;"/>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/img/house_screenshot.jpg" alt="Figure" style="width:600px;"/>
   <figcaption>
     <a href="https://www.redfin.com/county/2918/UT/Utah-County">Source</a>
   </figcaption>
@@ -65,4 +65,6 @@ and extract the city and zipcode from the `Address` column.
 * From the barplot we can clearly see that median home prices in Alpine and Woodland Hills are significanly more expensive than other cities. For our budget, this graph tells us that we should focus our house search in Vineyard and can afford up to about Pleasant Grove.
 
 Next, to get an idea of the square footage of houses in our price range, I filtered the data down to prices below $400,000 and created a dot plot of home price by the square footage. 
+ <img src="{{site.url}}/{{site.baseurl}}/assets/img/regression_plot2.png"/>
+
 
