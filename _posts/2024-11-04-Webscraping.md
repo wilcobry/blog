@@ -3,7 +3,7 @@ layout: post
 title:  "House Hunters: Webscraping Edition"
 date:   2024-11-03
 description: Buying a house is no easy task! With hundreds of houses available, it becomes difficult to sift through all the many options. But with just a few lines of code we can turn overwhelming pages of data into a clean, curated data set of housing information!
-image: "/assets/img/househeader.png"
+image: "/assets/img/house_pic.png"
 display_image: false  # change this to true to display the image below the banner 
 ---
 
@@ -13,7 +13,7 @@ display_image: false  # change this to true to display the image below the banne
 As a first-time prospective home buyer, one of the biggest questions we have is knowing if the house is really worth what it says it is. Luckily, with the webscraper we are going to build, we will be able to create a data frame that filters to houses in our price range and calculate the average square footage and common features of the houses in this range.
 
 ## Building the Webscraper
-Extracting data from websites can be done in multiple ways, such as APIs and Python packages such as BeautifulSoup. In any case, it is very important to extract the data in a way that is ethical and follows the guidelines of the website. For the purpose of this project, I found that redfin.com was the easiest and most accessible website to collect data. 
+Extracting data from websites can be done in multiple ways, such as APIs and Python packages such as `BeautifulSoup`. In any case, it is very important to extract the data in a way that is ethical and follows the guidelines of the website. For the purpose of this project, I found that redfin.com was the easiest and most accessible website to collect data. 
 
 ### Steps to Collect Data
 1. **Identify best method to extract your data**. In the case of Redfin, I first looked at the options to use an API but the APIs available did not have the data I was looking for. Because of this, I decided to use the `Selenium` package in Python to scrape the Redfin website using a web driver. The robots.txt file specified that county housing data was available to scrape. 
