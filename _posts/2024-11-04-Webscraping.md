@@ -62,7 +62,6 @@ and extract the city and zipcode from the `Address` column.
 ### Analyzing the Data
  Now that our data is clean and ready to go, it is time to go house hunting! I first wanted to understand how median home prices compared between the different cities in Utah County to get an idea of where affordable homes are located. 
  <img src="{{site.url}}/{{site.baseurl}}/assets/img/medianhouse.png"/>
-
 * From the barplot we can clearly see that median home prices in Alpine and Woodland Hills are significanly more expensive than other cities. For our budget, this graph tells us that we should focus our house search in Vineyard and can afford up to about Pleasant Grove.
 
 Next, to get an idea of the square footage of houses in our price range, I filtered the data down to prices below $400,000 and created a dot plot of home price by the square footage. 
