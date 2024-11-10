@@ -56,8 +56,10 @@ while current_page <= int(last_page):
 Once our data has been scraped and read into a dataframe, it is important to clean your data. 
 In the dataframe I created from Redfin, I removed NA values in the `Price` column and used 
 regular expressions to extract float values from `Price`, `Sq_Footage`, `Beds`, and `Baths`, 
-and extract the city and zipcode from the `address` column. 
+and extract the city and zipcode from the `Address` column. 
 {% include small_table.html %}
 
 ### Analyzing the Data
-Once
+ Now that our data is clean and ready to go, it is time to go house hunting! I first wanted to understand how median home prices compared between the different cities in Utah County to get an idea of where affordable homes are located. 
+ <img src="{{site.url}}/{{site.baseurl}}/assets/img/medianhouse.png"/>
+ 
