@@ -66,7 +66,7 @@ and extract the city and zipcode from the `Address` column. For more information
 
 Next, to get an idea of the square footage of houses in our price range, I filtered the data down to prices below $400,000 and created a dot plot of home price by the square footage. 
  <img src="{{site.url}}/{{site.baseurl}}/assets/img/regression_plot2.png"/>
-*From our plot it looks like, in general, as square footage increases, prices increase as well-- which definitely makes sense. Within our budget, this graph tells us that that most houses are going to be between 1000 and 2000 square feet. 
+* From our plot it looks like, in general, as square footage increases, prices increase as well-- which definitely makes sense. Within our budget, this graph tells us that that most houses are going to be between 1000 and 2000 square feet. 
 
 ### Closing Time
 After scraping Redfin and making a few plots, we now have a much better idea of where we should narrow our house search and what we can afford! Webscraping can be a little intimidating at first, but with a little bit of practice, the options become endless! This tutorial can be applied to your own personal house hunt or really any shopping experience (as long as you are ethically scraping of course). Can't decide what to get your family for Christmas? Scrape your favorite website and find the products in your price range! Drop in the comments what you are going to do with your new-found webscraping power. Happy coding!
