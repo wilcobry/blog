@@ -20,12 +20,12 @@ Extracting data from websites can be done in multiple ways, such as APIs and Pyt
 
 2. **Identify the container with the housing data**. As seen below, Redfin's website has a section of the website that contains a list of all the houses, this section is called a *container*. When webscraping in `Selenium`, you first need to identify the container where all of your data is located. Within this larger container, Redfin also uses containers to group each listing together. Identifying these containers sets us up to easily locate all the data we want to scrape from Redfin.
 
-<figure>
-  <img src="{{site.url}}/{{site.baseurl}}/assets/img/house_screenshot.jpg" alt="Figure" style="width:600px;"/>
-  <figcaption>
-    <a href="https://www.redfin.com/county/2918/UT/Utah-County">Source</a>
-  </figcaption>
-</figure>
+    <figure>
+    <img src="{{site.url}}/{{site.baseurl}}/assets/img/house_screenshot.jpg" alt="Figure" style="width:600px;"/>
+    <figcaption>
+        <a href="https://www.redfin.com/county/2918/UT/Utah-County">Source</a>
+    </figcaption>
+    </figure>
 
 3. **Identify the elements that will be extracted**. Within each container, there are elements associated with the information that we want to extract about each home. In fact, for this dataset all the elements we need to extract fall under the *bp-Homecard__Stats* class. Navigate to this class in your inspector and you will easily find the elements you are looking for! In my analysis, I wanted price, beds and baths, square footage, and the address.
 
